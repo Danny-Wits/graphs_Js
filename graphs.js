@@ -1,6 +1,6 @@
 let sleepTime = 100;
 function randomColor() {
-  return color(random(100, 200), random(100, 200));
+  return color(random(100, 200), random(100, 200), 255, 150);
 }
 
 class Node {
@@ -10,7 +10,7 @@ class Node {
     start: color(23, 127, 219),
     target: color(100, 0, 255),
     searching: color(0, 0, 255, 100),
-    path: color(0, 255, 0, 100),
+    path: color(170, 255, 80, 200),
   };
   constructor(x, y, value) {
     this.x = x;
@@ -54,9 +54,9 @@ class Edge {
   constructor(node1, node2, randomWeights = false) {
     this.node1 = node1;
     this.node2 = node2;
-    this.color = color(0, 25);
+    this.color = lerpColor(node1.color, node2.color, 0.5);
+    this.color.setAlpha(50);
     this.randomWeights = randomWeights;
-
     this.randomWeight = round(random(1, 50), 0);
     this.isSearching = false;
     this.isPath = false;
@@ -74,13 +74,13 @@ class Edge {
     fill(this.color);
     strokeWeight(2);
     if (this.isSearching) stroke(0, 0, 255, 100), fill(0, 0, 255, 100);
-    if (this.isPath) stroke(0, 255, 0, 100), fill(0, 255, 0, 100);
+    if (this.isPath) stroke(170, 255, 80, 200), fill(170, 255, 80, 100);
     line(this.node1.x, this.node1.y, this.node2.x, this.node2.y);
-    rect(midpoint.x - 12, midpoint.y - 12, 24, 24);
+    rect(midpoint.x - 12, midpoint.y - 12, 24, 24, 5);
     fill(0);
-    textSize(16);
+    textSize(10);
     let width = textWidth(this.distance);
-    text(this.distance, midpoint.x - width / 2, midpoint.y + 5);
+    text(this.distance, midpoint.x - width / 2, midpoint.y + 3);
   }
   getDistance() {
     return round(Graph.getCartesianDistance(this.node1, this.node2), 0);

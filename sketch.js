@@ -119,6 +119,7 @@ function keyPressed() {
     graph.remove(selected_node);
   }
   if (key === "n") {
+    graph.searchCleanUp();
     let neighbours = graph.getNeighbours(selected_node);
     neighbours.forEach((neighbour) => {
       neighbour.highlight();

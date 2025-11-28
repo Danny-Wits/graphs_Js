@@ -31,14 +31,19 @@ function mousePressed() {
   }
   if (mouseButton === LEFT) {
     let mouse = { x: mouseX, y: mouseY, radius: 10 };
+    let found = false;
     graph.nodes.forEach((node) => {
       if (circle_circle(node, mouse)) {
         selected_node = node;
+        found = true;
         node.isSelected = true;
       } else {
         node.isSelected = false;
       }
     });
+    if (!found) {
+      selected_node = null;
+    }
   }
 }
 function mouseDragged() {
@@ -49,7 +54,27 @@ function mouseDragged() {
 }
 function dijkstaStart() {
   if (selected_node === null) return;
-
   let { distances, previous } = dijkstra(graph, selected_node.value);
   console.log(distances, previous);
+}
+
+function keyPressed() {
+  if (key === "d") {
+    if (selected_node) {
+      graph.remove(selected_node);
+    }
+  }
+  if (key === "n") {
+    if (selected_node) {
+      let neighbours = graph.getNeighbours(selected_node);
+      neighbours.forEach((neighbour) => {
+        neighbour.isNeighbour = true;
+      });
+      setTimeout(() => {
+        neighbours.forEach((neighbour) => {
+          neighbour.isNeighbour = false;
+        });
+      }, 1000);
+    }
+  }
 }

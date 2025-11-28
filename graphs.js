@@ -1,5 +1,5 @@
 function randomColor() {
-  return color(random(200), random(200), random(200), random(100, 200));
+  return color(random(200), random(200), random(200), random(50, 150));
 }
 class Node {
   radius = 50;
@@ -9,10 +9,12 @@ class Node {
     this.value = value;
     this.color = randomColor();
     this.isSelected = false;
+    this.isNeighbour = false;
   }
   draw() {
     noStroke();
-    fill(this.color);
+
+    fill(this.isNeighbour ? color(255, 0, 0, 25) : this.color);
     circle(this.x, this.y, this.isSelected ? this.radius * 1.2 : this.radius);
     fill(0);
     textSize(16);
@@ -24,9 +26,9 @@ class Edge {
   constructor(node1, node2, randomWeights = false) {
     this.node1 = node1;
     this.node2 = node2;
-    this.color = color(0, 10);
+    this.color = color(0, 25);
     this.randomWeights = randomWeights;
-    this.randomWeight = round(random(10, 30), 0);
+    this.randomWeight = round(random(10, 10), 0);
   }
   draw() {
     this.distance = this.randomWeights ? this.randomWeight : this.getDistance();
@@ -67,6 +69,12 @@ class Graph {
     });
     this.nodes.push(node);
     console.log(this.nodes, this.edges);
+  }
+  remove(node) {
+    this.nodes = this.nodes.filter((n) => n !== node);
+    this.edges = this.edges.filter(
+      (edge) => edge.node1 !== node && edge.node2 !== node
+    );
   }
   draw() {
     this.nodes.forEach((node) => {

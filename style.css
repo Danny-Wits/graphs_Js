@@ -26,8 +26,10 @@ canvas {
 }
 .controls {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  background-color: #17171711;
 }
 .keycontrol {
   display: flex;
@@ -86,7 +88,7 @@ button:hover {
 .searching {
   background-color: var(--secondary-color);
   &:hover {
-    background-color: rgb(255, 27, 27);
+    background-color: rgb(52, 123, 255);
   }
 }
 
@@ -136,4 +138,10 @@ button:hover {
 }
 .checkbox-label {
   margin: 0px 10px;
+}
+.credit {
+  text-align: center;
+  a {
+    color: var(--secondary-color);
+  }
 }

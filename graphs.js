@@ -55,7 +55,7 @@ class Edge {
     this.node1 = node1;
     this.node2 = node2;
     this.color = lerpColor(node1.color, node2.color, 0.5);
-    this.color.setAlpha(50);
+    this.color.setAlpha(80);
     this.randomWeights = randomWeights;
     this.randomWeight = round(random(1, 50), 0);
     this.isSearching = false;

@@ -1,19 +1,54 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  user-select: none;
+}
+body {
+  overflow: hidden;
 }
 
+:root {
+  --primary-color: rgb(33, 33, 33);
+  --secondary-color: rgb(69, 216, 249);
+  --start: rgb(23, 127, 219);
+  --target: rgb(100, 0, 255);
+  --neighbour: rgb(246, 112, 112);
+}
 canvas {
   display: block;
 }
-
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
 .controls {
   position: absolute;
   top: 10px;
   left: 10px;
 }
-
+.keycontrol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  div {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+.key {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--primary-color);
+}
 button {
   margin: 5px;
   padding: 10px;
@@ -21,8 +56,84 @@ button {
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  background-color: rgb(102, 193, 249);
+  background-color: var(--primary-color);
 }
 button:hover {
   background-color: rgb(74, 178, 244);
+}
+
+.start {
+  border-color: var(--start);
+  span {
+    background-color: var(--start);
+  }
+}
+
+.target {
+  border-color: var(--target);
+  span {
+    background-color: var(--target);
+  }
+}
+
+.neighbour {
+  border-color: var(--neighbour);
+  span {
+    background-color: var(--neighbour);
+  }
+}
+
+.searching {
+  background-color: var(--secondary-color);
+  &:hover {
+    background-color: rgb(255, 27, 27);
+  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 0px 5px;
+  height: 20px;
+  border-radius: 10px;
+  background: #e6e8e9;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.i-label {
+  text-align: center;
+  margin: 10px 0px;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+}
+.checkbox {
+  margin: 0px 10px;
+}
+.checkbox-label {
+  margin: 0px 10px;
 }

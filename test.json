@@ -1,0 +1,1725 @@
+{
+  "nodes": [
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 396,
+      "y": 71,
+      "value": 1,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.5799838530673938, 0.791299707227329, 0.4076341539751549,
+          0.7372003578622085
+        ],
+        "levels": [148, 202, 104, 188],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": false,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    },
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 300,
+      "y": 226,
+      "value": 2,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.8981449159860412, 0.49854709180926654, 0.8984750518738491,
+          0.5015159919613457
+        ],
+        "levels": [229, 127, 229, 128],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": false,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    },
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 528,
+      "y": 215,
+      "value": 3,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.9282649051816401, 0.6950649744071062, 0.4208073711049877,
+          0.6184027293011132
+        ],
+        "levels": [237, 177, 107, 158],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": false,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    },
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 476,
+      "y": 142,
+      "value": 4,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.6294338082931591, 0.5390946193921707, 0.47423978510608655,
+          0.3960394447998605
+        ],
+        "levels": [161, 137, 121, 101],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": false,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    },
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 312,
+      "y": 162,
+      "value": 5,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.8927408474391514, 0.8506603939736797, 0.4137552783074793,
+          0.701644982502425
+        ],
+        "levels": [228, 217, 106, 179],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": true,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    },
+    {
+      "radius": 25,
+      "COLORS": {
+        "neighbour": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [1, 0, 0, 0.19607843137254902],
+          "levels": [255, 0, 0, 50],
+          "hsla": null,
+          "hsba": null
+        },
+        "start": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 0, 1],
+          "levels": [0, 0, 0, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "target": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0.39215686274509803, 0, 1, 1],
+          "levels": [100, 0, 255, 255],
+          "hsla": null,
+          "hsba": null
+        },
+        "searching": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 0, 1, 0.39215686274509803],
+          "levels": [0, 0, 255, 100],
+          "hsla": null,
+          "hsba": null
+        },
+        "path": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [0, 1, 0, 0.7843137254901961],
+          "levels": [0, 255, 0, 200],
+          "hsla": null,
+          "hsba": null
+        }
+      },
+      "x": 429,
+      "y": 269,
+      "value": 6,
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [
+          0.6719627228396323, 0.8322275195090739, 0.4725422036515679,
+          0.4137942639375968
+        ],
+        "levels": [171, 212, 120, 106],
+        "hsla": null,
+        "hsba": null
+      },
+      "isSelected": false,
+      "isNeighbour": false,
+      "isStart": false,
+      "isTarget": false,
+      "isSearching": false,
+      "isPath": false
+    }
+  ],
+  "edges": [
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 528,
+        "y": 215,
+        "value": 3,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.9282649051816401, 0.6950649744071062, 0.4208073711049877,
+            0.6184027293011132
+          ],
+          "levels": [237, 177, 107, 158],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 300,
+        "y": 226,
+        "value": 2,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.8981449159860412, 0.49854709180926654, 0.8984750518738491,
+            0.5015159919613457
+          ],
+          "levels": [229, 127, 229, 128],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 9,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 23
+    },
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 476,
+        "y": 142,
+        "value": 4,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.6294338082931591, 0.5390946193921707, 0.47423978510608655,
+            0.3960394447998605
+          ],
+          "levels": [161, 137, 121, 101],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 396,
+        "y": 71,
+        "value": 1,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.5799838530673938, 0.791299707227329, 0.4076341539751549,
+            0.7372003578622085
+          ],
+          "levels": [148, 202, 104, 188],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 7,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 11
+    },
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 312,
+        "y": 162,
+        "value": 5,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.8927408474391514, 0.8506603939736797, 0.4137552783074793,
+            0.701644982502425
+          ],
+          "levels": [228, 217, 106, 179],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": true,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 396,
+        "y": 71,
+        "value": 1,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.5799838530673938, 0.791299707227329, 0.4076341539751549,
+            0.7372003578622085
+          ],
+          "levels": [148, 202, 104, 188],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 5,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 12
+    },
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 312,
+        "y": 162,
+        "value": 5,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.8927408474391514, 0.8506603939736797, 0.4137552783074793,
+            0.701644982502425
+          ],
+          "levels": [228, 217, 106, 179],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": true,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 476,
+        "y": 142,
+        "value": 4,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.6294338082931591, 0.5390946193921707, 0.47423978510608655,
+            0.3960394447998605
+          ],
+          "levels": [161, 137, 121, 101],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 7,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 17
+    },
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 429,
+        "y": 269,
+        "value": 6,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.6719627228396323, 0.8322275195090739, 0.4725422036515679,
+            0.4137942639375968
+          ],
+          "levels": [171, 212, 120, 106],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 300,
+        "y": 226,
+        "value": 2,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.8981449159860412, 0.49854709180926654, 0.8984750518738491,
+            0.5015159919613457
+          ],
+          "levels": [229, 127, 229, 128],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 10,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 14
+    },
+    {
+      "node1": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 429,
+        "y": 269,
+        "value": 6,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.6719627228396323, 0.8322275195090739, 0.4725422036515679,
+            0.4137942639375968
+          ],
+          "levels": [171, 212, 120, 106],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "node2": {
+        "radius": 25,
+        "COLORS": {
+          "neighbour": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [1, 0, 0, 0.19607843137254902],
+            "levels": [255, 0, 0, 50],
+            "hsla": null,
+            "hsba": null
+          },
+          "start": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 0, 1],
+            "levels": [0, 0, 0, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "target": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0.39215686274509803, 0, 1, 1],
+            "levels": [100, 0, 255, 255],
+            "hsla": null,
+            "hsba": null
+          },
+          "searching": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 0, 1, 0.39215686274509803],
+            "levels": [0, 0, 255, 100],
+            "hsla": null,
+            "hsba": null
+          },
+          "path": {
+            "mode": "rgb",
+            "maxes": {
+              "rgb": [255, 255, 255, 255],
+              "hsb": [360, 100, 100, 1],
+              "hsl": [360, 100, 100, 1]
+            },
+            "_array": [0, 1, 0, 0.7843137254901961],
+            "levels": [0, 255, 0, 200],
+            "hsla": null,
+            "hsba": null
+          }
+        },
+        "x": 528,
+        "y": 215,
+        "value": 3,
+        "color": {
+          "mode": "rgb",
+          "maxes": {
+            "rgb": [255, 255, 255, 255],
+            "hsb": [360, 100, 100, 1],
+            "hsl": [360, 100, 100, 1]
+          },
+          "_array": [
+            0.9282649051816401, 0.6950649744071062, 0.4208073711049877,
+            0.6184027293011132
+          ],
+          "levels": [237, 177, 107, 158],
+          "hsla": null,
+          "hsba": null
+        },
+        "isSelected": false,
+        "isNeighbour": false,
+        "isStart": false,
+        "isTarget": false,
+        "isSearching": false,
+        "isPath": false
+      },
+      "color": {
+        "mode": "rgb",
+        "maxes": {
+          "rgb": [255, 255, 255, 255],
+          "hsb": [360, 100, 100, 1],
+          "hsl": [360, 100, 100, 1]
+        },
+        "_array": [0, 0, 0, 0.09803921568627451],
+        "levels": [0, 0, 0, 25],
+        "hsla": null,
+        "hsba": null
+      },
+      "randomWeights": false,
+      "randomWeight": 3,
+      "isSearching": false,
+      "isPath": false,
+      "distance": 11
+    }
+  ],
+  "randomWeights": false,
+  "density": 0.5,
+  "tree": false
+}

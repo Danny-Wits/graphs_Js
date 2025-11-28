@@ -3,21 +3,105 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Sketch</title>
-
+    <title>Graphs JS</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
     <main></main>
+
     <div class="controls">
-      <button onclick="dijkstaStart()">Dijkstra</button>
+      <div class="keycontrol">
+        <div class="item">
+          <span class="key">Right Click</span>
+          <div>Create a Node</div>
+        </div>
+        <div class="item">
+          <span class="key">Left Click</span>
+          <div>Move/Select</div>
+        </div>
+        <div class="item start">
+          <span class="key">S</span>
+          <div>Start Node</div>
+        </div>
+        <div class="item target">
+          <span class="key">T</span>
+          <div>Target Node</div>
+        </div>
+        <div class="item neighbour">
+          <span class="key">N</span>
+          <div>Neighbours</div>
+        </div>
+
+        <div class="item">
+          <span class="key">D</span>
+          <div>Delete</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <button onclick="saveGraph()">Save Graph</button>
+        <button onclick="clearSave()">Clear</button>
+        <button class="searching" onclick="start_bfs()">
+          Breadth First Search
+        </button>
+        <button class="searching" onclick="start_dfs()">
+          Depth First Search
+        </button>
+        <button class="searching" onclick="start_dijkstra()">
+          Dijkstra's Algorithm
+        </button>
+        <p class="i-label">Animation Speed</p>
+        <input
+          type="range"
+          min="1"
+          max="10"
+          value="5"
+          step="0.2"
+          class="slider"
+          id="sleepTimeSlider"
+          oninput="setAnimationSpeed(this.value)"
+        />
+        <p class="i-label">Edge Possibility</p>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          value="0.5"
+          step="0.1"
+          class="slider"
+          id="sleepTimeSlider"
+          oninput="graph.density=Number(this.value);"
+        />
+        <div class="inputs">
+          <div class="checkbox-container">
+            <label>
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="tree-checkbox"
+                checked
+                oninput="graph.tree=this.checked;"
+              />
+              <span class="checkbox-label">Tree</span>
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="fixed-weights-checkbox"
+                checked
+                oninput="graph.randomWeights=this.checked;"
+              />
+              <span class="checkbox-label">Fixed Weights</span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="graphs.js"></script>
+    <script src="algos.js"></script>
     <script src="sketch.js"></script>
   </body>
 </html>

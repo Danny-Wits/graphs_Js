@@ -1,5 +1,5 @@
 const Background = "white";
-const graph = new Graph(true);
+const graph = new Graph();
 let selected_node = null;
 
 function circle_circle(c1, c2) {

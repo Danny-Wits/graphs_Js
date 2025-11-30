@@ -54,8 +54,7 @@ class Edge {
   constructor(node1, node2, randomWeights = false) {
     this.node1 = node1;
     this.node2 = node2;
-    this.color = lerpColor(node1.color, node2.color, 0.5);
-    this.color.setAlpha(80);
+    this.color = color(0, 20);
     this.randomWeights = randomWeights;
     this.randomWeight = round(random(1, 50), 0);
     this.isSearching = false;
@@ -64,7 +63,7 @@ class Edge {
   highlight() {
     this.color = color(255, 0, 0, 50);
     setTimeout(() => {
-      this.color = color(0, 25);
+      this.color = color(0, 20);
     }, 2000);
   }
   draw() {

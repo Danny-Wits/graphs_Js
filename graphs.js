@@ -78,11 +78,11 @@ class Edge {
     rect(midpoint.x - 12, midpoint.y - 12, 24, 24, 5);
     fill(0);
     textSize(10);
-    let width = textWidth(this.distance);
-    text(this.distance, midpoint.x - width / 2, midpoint.y + 3);
+    let width = textWidth(round(this.distance, 0));
+    text(round(this.distance, 0), midpoint.x - width / 2, midpoint.y + 3);
   }
   getDistance() {
-    return round(Graph.getCartesianDistance(this.node1, this.node2), 0);
+    return Graph.getCartesianDistance(this.node1, this.node2);
   }
   getMidpoint() {
     return {

@@ -25,11 +25,12 @@ canvas {
   margin-top: 10px;
 }
 .controls {
-  position: absolute;
+  position: fixed;
   top: 5px;
   left: 5px;
   padding: 5px;
-  background-color: #17171711;
+  background-color: #ffffffb3;
+  z-index: 200 !important;
 }
 .keycontrol {
   display: flex;
@@ -43,6 +44,7 @@ canvas {
     display: inline-block;
     padding: 10px;
   }
+  cursor: pointer;
 }
 .key {
   display: inline-block;
@@ -144,4 +146,14 @@ button:hover {
   a {
     color: var(--secondary-color);
   }
+}
+.toggle-controls {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  z-index: 999 !important;
+  cursor: pointer;
 }

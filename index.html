@@ -12,10 +12,11 @@
 
   <body>
     <main></main>
+    <button class="toggle-controls" onclick="toggleControls()">Menu</button>
 
     <div class="controls">
       <div class="keycontrol">
-        <div class="item">
+        <div class="item" onclick="createNode()">
           <span class="key">Right Click</span>
           <div>Create a Node</div>
         </div>
@@ -23,22 +24,26 @@
           <span class="key">Left Click</span>
           <div>Move/Select</div>
         </div>
-        <div class="item start">
+        <div class="item start" onclick="press_key('s')">
           <span class="key">S</span>
           <div>Start Node</div>
         </div>
-        <div class="item target">
+        <div class="item target" onclick="press_key('t')">
           <span class="key">T</span>
           <div>Target Node</div>
         </div>
-        <div class="item neighbour">
+        <div class="item neighbour" onclick="press_key('n')">
           <span class="key">N</span>
           <div>Neighbours</div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="press_key('d')">
           <span class="key">D</span>
           <div>Delete</div>
+        </div>
+        <div class="item" onclick="press_key('h')">
+          <span class="key">H</span>
+          <div>Hide Edges</div>
         </div>
       </div>
       <div class="inputs">
@@ -52,6 +57,9 @@
         </button>
         <button class="searching" onclick="start_dijkstra()">
           Dijkstra's Algorithm
+        </button>
+        <button class="searching" onclick="start_prims()">
+          Prims Algorithm
         </button>
         <p class="i-label">Animation Speed</p>
         <input

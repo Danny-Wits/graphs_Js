@@ -5,6 +5,7 @@ let start_node = null;
 let target_node = null;
 const init_node_count = 1;
 let i = 1;
+let canvas;
 //!Saves
 window.addEventListener("beforeunload", () => {
   saveGraph();
@@ -35,18 +36,22 @@ function circle_circle(c1, c2) {
   let distance = dist(c1.x, c1.y, c2.x, c2.y);
   return distance < c1.radius + c2.radius ? true : false;
 }
-
+function createNode() {
+  graph.add(
+    new Node(random(100, width - 100), random(200, height - 200), i, 0)
+  );
+  i += 1;
+  console.log(graph.nodes);
+}
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  let canvas = document.querySelector("canvas");
+  canvas = document.querySelector("canvas");
   canvas.oncontextmenu = (e) => {
     e.preventDefault();
     return false;
   };
   for (; i < init_node_count; i++) {
-    graph.add(
-      new Node(random(100, width - 100), random(200, height - 200), i, 0)
-    );
+    graph.add(new Node(random(100, width - 100), random(200, height - 200), i));
   }
 }
 
@@ -71,6 +76,8 @@ function sideBox() {
   }
 }
 function drawNode(node, position, name) {
+  if (width < 500) return;
+
   let twidth = textWidth(name);
   text(name, position.x - twidth / 2, position.y + 50);
   fill(node.color);
@@ -85,24 +92,25 @@ function drawNode(node, position, name) {
 
 //!INPUTS
 
-function mousePressed() {
+async function mousePressed() {
   if (mouseButton === RIGHT) {
     graph.add(new Node(mouseX, mouseY, i, 0));
     i++;
   }
   if (mouseButton === LEFT) {
+    let same = false;
     let mouse = { x: mouseX, y: mouseY, radius: 2 };
-    let found = false;
     graph.nodes.forEach((node) => {
       if (circle_circle(node, mouse)) {
+        if (selected_node == node) same = true;
         selected_node = node;
-        found = true;
         node.isSelected = true;
       } else {
         node.isSelected = false;
       }
     });
-    if (!found) {
+    if (same) {
+      selected_node.isSelected = false;
       selected_node = null;
     }
   }
@@ -114,6 +122,10 @@ function mouseDragged() {
   }
 }
 function keyPressed() {
+  if (key === "h") {
+    graph.toggleEdges();
+    console.log("water");
+  }
   if (!selected_node) return;
   if (key === "d") {
     graph.remove(selected_node);
@@ -132,13 +144,23 @@ function keyPressed() {
   }
   if (key === "s") {
     if (start_node) start_node.isStart = false;
+    if (start_node == selected_node) {
+      start_node = null;
+      return;
+    }
     start_node = selected_node;
     start_node.isStart = true;
+    start_node.isPath = false;
   }
   if (key === "t") {
     if (target_node) target_node.isTarget = false;
+    if (target_node == selected_node) {
+      target_node = null;
+      return;
+    }
     target_node = selected_node;
     target_node.isTarget = true;
+    target_node.isPath = false;
   }
 }
 
@@ -149,6 +171,7 @@ function setAnimationSpeed(speed) {
 
 //! Algo calls
 async function start_bfs() {
+  toggleControls();
   graph.searchCleanUp();
   if (!start_node || !target_node) return;
   let parents = await breadthFirstSearch(graph, start_node, target_node);
@@ -156,6 +179,7 @@ async function start_bfs() {
   await parsePath(parents);
 }
 async function start_dfs() {
+  toggleControls();
   graph.searchCleanUp();
   if (!start_node || !target_node) return;
   let parents = await depthFirstSearch(graph, start_node, target_node);
@@ -163,6 +187,7 @@ async function start_dfs() {
   await parsePath(parents);
 }
 async function start_dijkstra() {
+  toggleControls();
   graph.searchCleanUp();
   if (!start_node || !target_node) return;
   let { parents, distance } = await dijkstra(graph, start_node, target_node);
@@ -170,17 +195,68 @@ async function start_dijkstra() {
   console.table(distance);
   await parsePath(parents);
 }
-
+async function start_prims() {
+  toggleControls();
+  graph.searchCleanUp();
+  if (!start_node) return;
+  let MST = await prims(graph, start_node);
+  graph.searchCleanUp();
+  await parsePathPrims(MST, start_node);
+}
 async function parsePath(parents) {
   if (parents) {
     let t = target_node;
+    let length = 0;
     while (parents.get(t)) {
       let edge = graph.getEdge(parents.get(t), t);
       await sleep(sleepTime * 1.5);
       edge.isPath = true;
       t.isPath = true;
       t = parents.get(t);
+      length += edge.distance;
     }
     t.isPath = true;
+    t.showText("Path Length: " + length);
+  }
+}
+async function parsePathPrims(MST, start) {
+  if (MST) {
+    let weight = 0;
+    for (let edge of MST) {
+      await sleep(sleepTime * 1.5);
+      let actualEdge = graph.getEdge(edge.node1, edge.node2);
+      actualEdge.isPath = true;
+      actualEdge.node1.isPath = true;
+      actualEdge.node2.isPath = true;
+      weight += actualEdge.distance;
+    }
+    start.showText("MST Weight: " + weight);
+  }
+}
+
+function press_key(key) {
+  canvas.dispatchEvent(
+    new KeyboardEvent("keydown", {
+      key: key,
+      code: "Key" + key,
+      bubbles: true,
+      cancelable: true,
+    })
+  );
+  canvas.dispatchEvent(
+    new KeyboardEvent("keyup", {
+      key: key,
+      code: "Key" + key,
+      bubbles: true,
+      cancelable: true,
+    })
+  );
+}
+
+function toggleControls() {
+  if (document.querySelector(".controls").style.display === "none") {
+    document.querySelector(".controls").style.display = "block";
+  } else {
+    document.querySelector(".controls").style.display = "none";
   }
 }

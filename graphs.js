@@ -23,6 +23,8 @@ class Node {
     this.isTarget = false;
     this.isSearching = false;
     this.isPath = false;
+    this.hasMessage = false;
+    this.message = "";
   }
   highlight() {
     this.color = color(255, 0, 0, 50);
@@ -32,6 +34,15 @@ class Node {
       this.isNeighbour = false;
     }, 2000);
   }
+
+  showText(msg) {
+    this.message = msg;
+    this.hasMessage = true;
+  }
+  clearText() {
+    this.message = "";
+    this.hasMessage = false;
+  }
   draw() {
     noStroke();
     fill(this.color);
@@ -40,7 +51,7 @@ class Node {
     if (this.isStart) stroke(this.COLORS.start), strokeWeight(4);
     if (this.isTarget) stroke(this.COLORS.target), strokeWeight(4);
     if (this.isSearching) fill(this.COLORS.searching);
-    if (this.isPath) fill(this.COLORS.path);
+    if (this.isPath) fill(this.COLORS.path), stroke(this.COLORS.path);
     circle(this.x, this.y, this.radius * 2);
     noStroke();
     strokeWeight(2);
@@ -48,26 +59,41 @@ class Node {
     textSize(16);
     let width = textWidth(this.value);
     text(this.value, this.x - width / 2, this.y + 5);
+    if (this.hasMessage) {
+      fill(this.COLORS.path);
+      rect(
+        this.x - textWidth(this.message) / 2 - 10,
+        this.y - 60,
+        textWidth(this.message) + 20,
+        30,
+        20
+      );
+      fill(50);
+      textSize(14);
+      text(this.message, this.x - textWidth(this.message) / 2, this.y - 40);
+    }
   }
 }
 class Edge {
   constructor(node1, node2, randomWeights = false) {
     this.node1 = node1;
     this.node2 = node2;
-    this.color = color(0, 20);
+    this.color = color(0, 10);
     this.randomWeights = randomWeights;
     this.randomWeight = round(random(1, 50), 0);
     this.isSearching = false;
     this.isPath = false;
+    this.visible = true;
   }
   highlight() {
     this.color = color(255, 0, 0, 50);
     setTimeout(() => {
-      this.color = color(0, 20);
+      this.color = color(0, 10);
     }, 2000);
   }
   draw() {
     this.distance = this.randomWeights ? this.randomWeight : this.getDistance();
+    if (!this.visible) return;
     let midpoint = this.getMidpoint();
     stroke(this.color);
     fill(this.color);
@@ -101,6 +127,7 @@ class Graph {
     this.randomWeights = ramdomWeights;
     this.density = density;
     this.tree = tree;
+    this.visibleEdges = true;
   }
   add(node) {
     this.nodes.forEach((otherNode) => {
@@ -162,10 +189,18 @@ class Graph {
     this.nodes.forEach((node) => {
       node.isSearching = false;
       node.isPath = false;
+      node.clearText();
     });
     this.edges.forEach((edge) => {
       edge.isSearching = false;
       edge.isPath = false;
+    });
+  }
+  toggleEdges() {
+    this.visibleEdges = !this.visibleEdges;
+    this.edges.forEach((edge) => {
+      if (edge.isPath) return;
+      edge.visible = this.visibleEdges;
     });
   }
   loadOldGraph(oldGraph) {

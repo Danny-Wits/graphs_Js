@@ -5,9 +5,6 @@
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   user-select: none;
 }
-body {
-  overflow: hidden;
-}
 
 :root {
   --primary-color: rgb(33, 33, 33);
@@ -16,33 +13,45 @@ body {
   --target: rgb(100, 0, 255);
   --neighbour: rgb(246, 112, 112);
 }
-canvas {
+main {
   display: block;
+  z-index: 20;
+}
+h1 {
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
 }
 .inputs {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  align-items: center;
+  grid-auto-rows: minmax(30px, auto);
+  gap: 5px;
+  margin-top: 5px;
 }
 .controls {
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 5px;
-  padding: 5px;
-  background-color: #ffffffb3;
+  padding: 15px;
+  width: 300px;
+  background-color: #e6e6e660;
   z-index: 200 !important;
 }
+.long {
+  grid-column: span 2;
+}
 .keycontrol {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 .item {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   div {
     display: inline-block;
-    padding: 10px;
   }
   cursor: pointer;
 }
@@ -54,7 +63,7 @@ canvas {
   background-color: var(--primary-color);
 }
 button {
-  margin: 5px;
+  margin: 2px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -100,7 +109,7 @@ button:hover {
   padding: 0px 5px;
   height: 20px;
   border-radius: 10px;
-  background: #e6e8e9;
+  background: var(--secondary-color);
   outline: none;
   opacity: 0.8;
   -webkit-transition: 0.2s;
@@ -112,23 +121,20 @@ button:hover {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
+  width: 20px;
   height: 15px;
-  border-radius: 50%;
-  background: var(--primary-color);
+  border-radius: 10px;
+  background: white;
   cursor: pointer;
 }
 .slider::-moz-range-thumb {
-  width: 15px;
+  width: 20px;
   height: 15px;
-  border-radius: 50%;
-  background: var(--primary-color);
+  border-radius: 10px;
+  background: white;
   cursor: pointer;
 }
-.i-label {
-  text-align: center;
-  margin: 10px 0px;
-}
+
 .checkbox-container {
   display: flex;
   flex-direction: row;
@@ -138,11 +144,9 @@ button:hover {
 .checkbox {
   margin: 0px 10px;
 }
-.checkbox-label {
-  margin: 0px 10px;
-}
 .credit {
-  text-align: center;
+  margin-top: 10px;
+  text-align: right;
   a {
     color: var(--secondary-color);
   }
@@ -156,4 +160,10 @@ button:hover {
   color: white;
   z-index: 999 !important;
   cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .toggle-controls {
+    display: none;
+  }
 }

@@ -15,13 +15,14 @@
     <button class="toggle-controls" onclick="toggleControls()">Menu</button>
 
     <div class="controls">
+      <h1>GRAPH JS</h1>
       <div class="keycontrol">
-        <div class="item" onclick="createNode()">
-          <span class="key">Right Click</span>
+        <div class="item long" onclick="createNode()">
+          <span class="key">R Click</span>
           <div>Create a Node</div>
         </div>
-        <div class="item">
-          <span class="key">Left Click</span>
+        <div class="item long">
+          <span class="key">L Click</span>
           <div>Move/Select</div>
         </div>
         <div class="item start" onclick="press_key('s')">
@@ -59,9 +60,9 @@
           Dijkstra's Algorithm
         </button>
         <button class="searching" onclick="start_prims()">
-          Prims Algorithm
+          Prims MST Algorithm
         </button>
-        <p class="i-label">Animation Speed</p>
+        <p>Animation Speed</p>
         <input
           type="range"
           min="1"
@@ -72,7 +73,7 @@
           id="sleepTimeSlider"
           oninput="setAnimationSpeed(this.value)"
         />
-        <p class="i-label">Edge Possibility</p>
+        <p>Edge Possibility</p>
         <input
           type="range"
           min="0"
@@ -83,30 +84,27 @@
           id="sleepTimeSlider"
           oninput="graph.density=Number(this.value);"
         />
-        <div class="inputs">
-          <div class="checkbox-container">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                id="tree-checkbox"
-                checked
-                oninput="graph.tree=this.checked;"
-              />
-              <span class="checkbox-label">Tree</span>
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                id="fixed-weights-checkbox"
-                checked
-                oninput="graph.randomWeights=this.checked;"
-              />
-              <span class="checkbox-label">Fixed Weights</span>
-            </label>
-          </div>
-        </div>
+
+        <label>
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="tree-checkbox"
+            checked
+            oninput="graph.tree=this.checked;"
+          />
+          <span>Tree</span>
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="fixed-weights-checkbox"
+            checked
+            oninput="graph.randomWeights=this.checked;"
+          />
+          <span>Fixed Weights</span>
+        </label>
       </div>
       <p class="credit">
         Created by

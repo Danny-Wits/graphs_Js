@@ -37,11 +37,8 @@ function circle_circle(c1, c2) {
   return distance < c1.radius + c2.radius ? true : false;
 }
 function createNode() {
-  graph.add(
-    new Node(random(100, width - 100), random(200, height - 200), i, 0)
-  );
+  graph.add(new Node(random(100, width - 100), random(200, height - 200), i));
   i += 1;
-  console.log(graph.nodes);
 }
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -50,6 +47,7 @@ function setup() {
     e.preventDefault();
     return false;
   };
+  canvas.style.zIndex = 10;
   for (; i < init_node_count; i++) {
     graph.add(new Node(random(100, width - 100), random(200, height - 200), i));
   }
@@ -98,21 +96,15 @@ async function mousePressed() {
     i++;
   }
   if (mouseButton === LEFT) {
-    let same = false;
     let mouse = { x: mouseX, y: mouseY, radius: 2 };
     graph.nodes.forEach((node) => {
       if (circle_circle(node, mouse)) {
-        if (selected_node == node) same = true;
         selected_node = node;
         node.isSelected = true;
       } else {
         node.isSelected = false;
       }
     });
-    if (same) {
-      selected_node.isSelected = false;
-      selected_node = null;
-    }
   }
 }
 function mouseDragged() {
@@ -124,7 +116,6 @@ function mouseDragged() {
 function keyPressed() {
   if (key === "h") {
     graph.toggleEdges();
-    console.log("water");
   }
   if (!selected_node) return;
   if (key === "d") {
@@ -216,7 +207,7 @@ async function parsePath(parents) {
       length += edge.distance;
     }
     t.isPath = true;
-    t.showText("Path Length: " + length);
+    t.showText("Path Length: " + round(length, 0));
   }
 }
 async function parsePathPrims(MST, start) {
@@ -230,7 +221,7 @@ async function parsePathPrims(MST, start) {
       actualEdge.node2.isPath = true;
       weight += actualEdge.distance;
     }
-    start.showText("MST Weight: " + weight);
+    start.showText("MST Weight: " + round(weight, 0));
   }
 }
 
@@ -254,6 +245,7 @@ function press_key(key) {
 }
 
 function toggleControls() {
+  if (width > 800) return;
   if (document.querySelector(".controls").style.display === "none") {
     document.querySelector(".controls").style.display = "block";
   } else {
